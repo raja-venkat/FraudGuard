@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - Fraud Detection System{% endblock %}
+
+{% block content %}
+<section class="py-16">
+    <div class="max-w-4xl mx-auto text-center mb-16 px-4">
+        <h2 class="text-4xl font-bold mb-6">About Our Fraud Detection System</h2>
+        <p class="text-gray-600 text-lg">
+            Protecting financial transactions with advanced AI-powered solutions. Our system leverages cutting-edge
+            machine learning algorithms to detect and prevent fraudulent activities in real-time.
+        </p>
+    </div>
+
+    <!-- Website Uses Section -->
+    <div class="max-w-7xl mx-auto px-4 mb-16">
+        <h3 class="text-3xl font-bold text-center mb-12">Key Features</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                    </svg>
+                </div>
+                <h4 class="text-xl font-semibold mb-3">Real-time Detection</h4>
+                <p class="text-gray-600">Instant analysis of transactions using deep learning models with 99.8% accuracy</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                    <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                </div>
+                <h4 class="text-xl font-semibold mb-3">Deep Learning Core</h4>
+                <p class="text-gray-600">Advanced neural networks trained on millions of transaction patterns</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                </div>
+                <h4 class="text-xl font-semibold mb-3">Security First</h4>
+                <p class="text-gray-600">End-to-end encrypted processing with GDPR compliant data handling</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Team</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://placehold.co/600x400" alt="John Smith" class="w-full h-60 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold mb-2">John Smith</h3>
+                        <p class="text-gray-600 font-medium mb-3">Chief Technology Officer</p>
+                        <p class="text-gray-500">10+ years of experience in AI and financial security systems. Leads our technical strategy and platform development.</p>
+                    </div>
+                </div>
+    
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://placehold.co/600x400" alt="Sarah Johnson" class="w-full h-60 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold mb-2">Sarah Johnson</h3>
+                        <p class="text-gray-600 font-medium mb-3">Lead Data Scientist</p>
+                        <p class="text-gray-500">Machine learning expert specializing in fraud pattern recognition and predictive analytics.</p>
+                    </div>
+                </div>
+    
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://placehold.co/600x400" alt="Michael Chen" class="w-full h-60 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold mb-2">Michael Chen</h3>
+                        <p class="text-gray-600 font-medium mb-3">Security Architect</p>
+                        <p class="text-gray-500">Cybersecurity specialist ensuring system integrity and data protection across all platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Our Mission</h2>
+            <p class="text-gray-600 text-lg leading-relaxed">
+                We are committed to creating safer financial ecosystems through innovative technology. 
+                Our team combines expertise in artificial intelligence, data science, and cybersecurity 
+                to deliver reliable fraud detection solutions.
+            </p>
+        </div>
+    </section>
+{% endblock %}

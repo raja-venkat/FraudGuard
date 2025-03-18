@@ -1,0 +1,33 @@
+{# templates/includes/_result.html #}
+<div class="bg-white rounded-lg shadow-md p-6 {% if prediction == 'Fraudulent' %}border-l-4 border-red-500{% else %}border-l-4 border-green-500{% endif %}">
+    <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold">Transaction Analysis Result</h2>
+        <span class="px-4 py-2 rounded-full text-sm font-medium {% if prediction == 'Fraudulent' %}bg-red-100 text-red-800{% else %}bg-green-100 text-green-800{% endif %}">
+            {{ prediction }}
+        </span>
+    </div>
+
+    <div class="mb-6">
+        <div class="h-4 bg-gray-200 rounded-full overflow-hidden">
+            <div class="h-full {% if prediction == 'Fraudulent' %}bg-red-500{% else %}bg-green-500{% endif %}" 
+                 style="width: {{ probability }}%">
+                <span class="text-white text-xs font-medium absolute right-2">{{ probability }}%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="space-y-4 text-gray-600">
+        <div class="flex justify-between border-b pb-2">
+            <span>Amount:</span>
+            <span class="font-medium">${{ amount }}</span>
+        </div>
+        <div class="flex justify-between border-b pb-2">
+            <span>Type:</span>
+            <span class="font-medium">{{ type }}</span>
+        </div>
+        <div class="flex justify-between">
+            <span>Destination:</span>
+            <span class="font-medium">{{ nameDest }}</span>
+        </div>
+    </div>
+</div>

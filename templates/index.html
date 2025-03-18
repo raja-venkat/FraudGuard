@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Fraud Detection Analysis{% endblock %}
+
+{% block content %}
+<section class="mb-16">
+    <div class="text-center py-20 bg-blue-600 text-white">
+        <h1 class="text-4xl font-bold mb-4">Real-Time Fraud Detection</h1>
+        <p class="text-xl opacity-90">Protect your transactions with AI-powered fraud detection</p>
+    </div>
+</section>
+
+<section class="mb-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Analyze Transaction</h2>
+    {% include 'includes/_form.html' %}
+</section>
+
+<section class="grid md:grid-cols-2 gap-8 mb-16" id="about">
+    <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold mb-4">How It Works</h3>
+        <p class="text-gray-600">Our advanced machine learning model analyzes transaction patterns in real-time using deep learning algorithms to detect suspicious activities.</p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold mb-4">Key Features</h3>
+        <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Real-time transaction monitoring
+            </li>
+            <!-- Add more features similarly -->
+        </ul>
+    </div>
+</section>
+{% endblock %}
